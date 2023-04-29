@@ -1,13 +1,21 @@
 * {
   box-sizing: border-box;
+
 }
 
 body {
   font-family: sans-serif;
   margin: 20px;
   padding: 0;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(172,180,169,0.12386204481792717) 35%, rgba(0,212,255,1) 100%);
 }
 
+.mainhtml{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 20%;
+}
 h1 {
   margin-top: 0;
   font-size: 22px;
@@ -56,19 +64,39 @@ body {
   padding: 0;
 }
 
+button.square{
+  margin: 2px;
+  border-radius: 8px;
+}
+
+button.square:hover {
+  background-color: lightslategray;
+}
+
+button{
+  background-color: azure;
+  border-radius: 8px;
+  border-style: 1px solid;
+  border: 1px solid #999;
+  
+}
+button:hover{
+  background-color: lightslategray;
+}
+
 .square {
   background: #fff;
   border: 1px solid #999;
   float: left;
   font-size: 24px;
   font-weight: bold;
-  line-height: 34px;
-  height: 34px;
+  line-height: 50px;
+  height: 50px;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 50px;
 }
 
 .board-row:after {
@@ -79,10 +107,15 @@ body {
 
 .status {
   margin-bottom: 10px;
+  font-size: 24px;
 }
 .game {
   display: flex;
   flex-direction: row;
+ max-width: 100%;
+ justify-content: center;
+  margin-top: 7%;
+  
 }
 
 .game-info {
